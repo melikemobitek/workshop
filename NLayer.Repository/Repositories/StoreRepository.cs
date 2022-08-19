@@ -1,4 +1,5 @@
-﻿using NLayer.Core;
+﻿using Microsoft.EntityFrameworkCore;
+using NLayer.Core;
 using NLayer.Core.DTOs;
 using NLayer.Core.Repositories;
 using System;
@@ -18,6 +19,7 @@ namespace NLayer.Repository.Repositories
 
         public Task<Store> GetSingleStoreByIdWithProductsAsync(int StoreId)
         {
+            //Sql join'i ef core ile yapılacak. Hint : Include
             throw new NotImplementedException();
         }
     }

@@ -29,6 +29,7 @@ namespace NLayer.API.Controllers
             return CreateActionResult(CustomResponseDto<List<StoreDto>>.Success(200, storesDto));
 
         }
+        //Ekleme,Çıkarma ve Güncelleme metotları da yazılacak.
 
 
         // api/stores/GetSingleStoreByIdWithProducts/2
