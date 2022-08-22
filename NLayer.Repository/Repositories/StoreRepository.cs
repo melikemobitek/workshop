@@ -17,10 +17,14 @@ namespace NLayer.Repository.Repositories
         {
         }
 
-        public Task<Store> GetSingleStoreByIdWithProductsAsync(int StoreId)
+
+        public async Task<Store> GetSingleStoreByIdWithProductsAsync(int storeId)
         {
+            return await _context.Store.Include(x => x.Products).Where(x => x.Id == storeId).SingleOrDefaultAsync();
             //Sql join'i ef core ile yapılacak. Hint : Include
             throw new NotImplementedException();
         }
+
+        
     }
 }

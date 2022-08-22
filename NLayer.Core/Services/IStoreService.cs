@@ -11,5 +11,6 @@ namespace NLayer.Core.Services
     public interface IStoreService : IService<Store>
     {
         public Task<CustomResponseDto<StoreWithProductsDto>> GetSingleStoreByIdWithProductsAsync(int StoreId);
+        Task UpdateAsync(Product product);
     }
 }

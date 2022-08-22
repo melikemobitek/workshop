@@ -42,6 +42,9 @@ namespace NLayer.Service.Services
             throw new NotImplementedException();
         }
 
-        
+        public Task UpdateAsync(Product product)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

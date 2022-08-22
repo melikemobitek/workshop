@@ -9,8 +9,9 @@
         public int CategoryId { get; set; }//*
 
         public Category Category { get; set; }
-
         //@TODO:StoreId 'de olursa daha iyi olur.
+        public int StoreId { get; set; }
+       
         //Store için eklendi.
         public Store Store { get; set; }
 

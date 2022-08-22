@@ -8,6 +8,7 @@ namespace NLayer.Repository.Repositories
     {
         public CategoryRepository(AppDbContext context) : base(context)
         {
+
         }
 
         public async Task<Category> GetSingleCategoryByIdWithProductsAsync(int categoryId)
